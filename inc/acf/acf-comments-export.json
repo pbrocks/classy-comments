@@ -1,0 +1,377 @@
+[
+    {
+        "key": "group_5712753e12db0",
+        "title": "Renaming Comments",
+        "fields": [
+            {
+                "key": "field_5712757798a07",
+                "label": "Review Type",
+                "name": "review_type",
+                "type": "true_false",
+                "instructions": "Would you like to change the text associated with your Comments area, e.g. for a Book Review?",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_5713817218f9e",
+                "label": "Change Comments Message",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "This was initially written for Book Reviews, but adapted to be more flexible.",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_571f93ee01257",
+                "label": "Add your Review",
+                "name": "add_your_review",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Add your Review below",
+                "placeholder": "Add your Review below",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_571f9e9a1694a",
+                "label": "After Stars",
+                "name": "after_stars",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Add your Review below",
+                "placeholder": "Add your Review below",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_571275d998a08",
+                "label": "Add a Comment",
+                "name": "add_a_comment",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Book Review",
+                "placeholder": "Book Review",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_572799a674ff0",
+                "label": "Ratings Label",
+                "name": "ratings_label",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Add your Rating of the Book here",
+                "placeholder": "Add your Ratings text here",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_57127cee20f86",
+                "label": "Text Before Comment Box",
+                "name": "text_before_comment_box",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Required fields are marked with <span class=\"required\">*<\/span>. Your email address will not be published.",
+                "placeholder": "Explanatory text before the Comment Box",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_57127900bfc6a",
+                "label": "Comment Box Label",
+                "name": "comment_box_label",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Comment Box Label",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_571279e43b6b2",
+                "label": "Submit Button",
+                "name": "submit_button",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Submit Review",
+                "placeholder": "Submit Button Text",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_571a25b0ada01",
+                "label": "Redirect URL",
+                "name": "redirect_url",
+                "type": "url",
+                "instructions": "If you would like to redirect your logged out users to another post or page after leaving a comment\/review, specify which URL you want them to wind up at here.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "http:\/\/some.where.org\/thank-you-for-your-review"
+            },
+            {
+                "key": "field_572a00cebe438",
+                "label": "Last Name Note",
+                "name": "last_name_note",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "(Your Last Name will not be published.)",
+                "placeholder": "Note appearing next to Last Name label",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_572a03202909e",
+                "label": "Email Note",
+                "name": "email_note",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "(Your email address will not be published.)",
+                "placeholder": "Note appearing next to Email label",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5723d3f216296",
+                "label": "PTB Legalese",
+                "name": "peta_legalese",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5712757798a07",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "comment-form-legalese",
+                    "id": ""
+                },
+                "default_value": "By submitting this form, you are agreeing to our collection, storage, use, and disclosure of your personal information in accordance with our privacy policy as well as to receiving emails from us.",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "field",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

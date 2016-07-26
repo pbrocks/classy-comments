@@ -1,0 +1,73 @@
+.post img .no-border, .thumb .no-border {
+    border: none;
+}
+
+.starRating > input[type="radio"]+label {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.starRating:not(old){
+	display        : inline-block;
+	height         : 1.4em;
+	width          : 7em;
+	overflow       : hidden;
+	vertical-align : bottom;
+}
+
+.starRating:not(old) > input{
+	margin-right : -100%;
+	opacity      : 0;
+}
+
+.starRating:not(old) > label{
+	display         : block;
+	float           : right;
+	position        : relative;
+	background      : url('../images/star-off.svg');
+	background-size : contain;
+}
+
+.starRating:not(old) > label:before{
+	content         : '';
+	display         : block;
+	width           : 1.5em;
+	height          : 1.5em;
+	background      : url('../images/star-on.svg');
+	background-size : contain;
+	opacity         : 0;
+	transition      : opacity 0.2s linear;
+}
+
+.starRating:not(old) > label:hover:before,
+.starRating:not(old) > label:hover ~ label:before,
+.starRating:not(:hover) > :checked ~ label:before{
+	opacity : 1;
+}
+
+.smaller-font, .comment-form-legalese p {
+    font-size: .8rem;
+    padding: 0 1rem;
+    color: #777;
+/*    background-color: rgba(255,215,0, .6); */
+}
+
+.form-submit  {
+    text-align: right;
+    width: 100%;
+    padding: 0 1rem 0;
+}
+
+#book-review-shortcode {
+	width: 25%;
+	float: right;
+	text-align: center;
+}
+#avg-stars {
+	width: 70%;
+	margin: 0 2rem;
+}
+
+.rating, p.comment-rating {
+    float: right;
+}
